@@ -1,0 +1,93 @@
+body { font-family: 'Lato', sans-serif; }
+
+.struct-layout {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.struct-layout > main.struct {
+  flex: 1;
+}
+
+
+header.struct {
+  padding: 0;
+  margin: 0;
+}
+
+header.struct > .title-line {
+  background-color: #2980B9;
+  padding: 8px;
+}
+
+header.struct > .title-line > h1 {
+  color: #FFFFFF;
+  font-weight: 900;
+  margin: 0; padding: 0;
+}
+
+header.struct > .title-line > h1::first-letter {
+  font-style: italic;
+}
+
+header.struct > nav {
+  font-weight: 300;
+  background-color: #216694;
+  padding : 4px;
+  color: #ECF0F1;
+}
+
+footer.struct {
+  background-color: #2C3E50;
+  padding: 12px;
+  color: #76A6D6;
+}
+
+footer.struct > div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+footer.struct > div > ul  {
+  padding: 20px;
+  margin: 0;
+  list-style-type: none;
+}
+
+footer.struct > div > ul > li {
+  margin: 8px;
+}
+
+footer.struct > div > ul > li.enum-title {
+  font-weight: 900;
+  padding-bottom: 12px;
+  font-size: 120%;
+  color: #89C2FA;
+}
+
+footer.struct > div > ul > li > a {
+  color: #76A6D6;
+  text-decoration: none;
+}
+
+footer.struct > div > ul > li > a:hover {
+  color: #E74C3C;
+}
+
+footer.struct >  p {
+  padding-left: 32px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+
+
+
+@media screen and (max-width: 640px) {
+  footer.struct > div {
+    display: block;
+  }
+}
