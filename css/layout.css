@@ -18,7 +18,7 @@ header.struct {
 
 header.struct > .title-line {
   background-color: #2980B9;
-  padding: 8px;
+  padding: 12px;
 }
 
 header.struct > .title-line > h1 {
@@ -34,8 +34,30 @@ header.struct > .title-line > h1::first-letter {
 header.struct > nav {
   font-weight: 300;
   background-color: #216694;
-  padding : 4px;
+  padding : 12px;
   color: #ECF0F1;
+  display: flex;
+}
+
+header.struct > nav > ul {
+  padding: 0;
+  padding-left: 12px;
+  margin: 0;
+  list-style-type: none;
+}
+
+header.struct > nav > ul > li > a {
+  text-decoration: none;
+  color: #89C2FA;
+  padding: 2px 12px;
+  border-radius: 4px;
+  margin-right: 4px;
+  font-weight: 400;
+  transition: all 0.2s ease;
+}
+
+header.struct > nav > ul > li > a:hover {
+  color: #FFFFFF;
 }
 
 footer.struct {
@@ -70,7 +92,9 @@ footer.struct > div > ul > li.enum-title {
 footer.struct > div > ul > li > a {
   color: #76A6D6;
   text-decoration: none;
+  transition: all 0.2s ease;
 }
+
 
 footer.struct > div > ul > li > a:hover {
   color: #E74C3C;
@@ -86,7 +110,7 @@ footer.struct >  p {
 
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 600px) {
   footer.struct > div {
     display: block;
   }
