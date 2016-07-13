@@ -117,7 +117,6 @@ main.struct {
 main.struct > div {
   margin: auto;
   width: 100%;
-  max-width: 1024px;
   padding: 32px 24px;
 }
 
