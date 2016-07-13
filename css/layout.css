@@ -36,7 +36,6 @@ header.struct > nav {
   background-color: #216694;
   padding : 12px;
   color: #ECF0F1;
-  display: flex;
 }
 
 header.struct > nav > ul {
@@ -44,6 +43,10 @@ header.struct > nav > ul {
   padding-left: 12px;
   margin: 0;
   list-style-type: none;
+}
+
+header.struct > nav > ul > li {
+  display: inline;
 }
 
 header.struct > nav > ul > li > a {
@@ -107,11 +110,33 @@ footer.struct >  p {
 }
 
 
+main.struct {
 
+}
+
+main.struct > div {
+  margin: auto;
+  width: 100%;
+  max-width: 1024px;
+  padding: 32px 24px;
+}
 
 
 @media screen and (max-width: 600px) {
+
   footer.struct > div {
     display: block;
   }
+
+  header.struct > nav {
+    font-weight: 300;
+    background-color: #216694;
+    padding : 12px 4px;
+    color: #ECF0F1;
+  }
+
+  header.struct > nav > ul > li {
+    display: block;
+  }
+
 }
