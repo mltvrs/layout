@@ -257,6 +257,7 @@ main.struct > div {
 
 .spotlight > div > article > p {
   font-family: 'Merriweather', serif;
+  text-align: justify;
 }
 
 .spotlight > div > article > div {
