@@ -218,6 +218,55 @@ main.struct > div {
   color: #FFFFFF;
 }
 
+.spotlight > h2 {
+  margin: 0;
+  color: #216694;
+}
+
+.spotlight > h2 > i {
+  color: #FFB03B;
+}
+
+.spotlight > div {
+  margin-top: 22px;
+  display: flex;
+}
+
+.spotlight > div > div {
+  padding: 0px 24px;
+  text-align: center;
+}
+
+.spotlight > div > div > img {
+  border-radius: 50%;
+  margin: 12px 0px;
+}
+
+
+.spotlight > div > article {
+  padding: 10px 12px;
+  /*background-color: #E7F5FF;*/
+  border-radius: 4px;
+  color: #375D81;
+  margin: auto;
+}
+
+.spotlight > div > article > h3 {
+  margin: 0px 8px;
+}
+
+.spotlight > div > article > p {
+  font-family: 'Merriweather', serif;
+}
+
+.spotlight > div > article > div {
+  margin: 16px 0;
+  padding: 8px;
+  background-color: #FFF;
+  width: auto;
+  display: inline-block;
+  border-radius: 4px;
+}
 
 @media screen and (max-width: 600px) {
 
@@ -267,6 +316,18 @@ main.struct > div {
   {
     opacity: 1.0;
     transform:scaleX(1.0);
+  }
+
+  .spotlight > div {
+    display: block;
+  }
+
+  .spotlight > div > div {
+    margin: 32px;
+  }
+
+  .spotlight > div > div > img {
+    width: 95px;
   }
 
 }
