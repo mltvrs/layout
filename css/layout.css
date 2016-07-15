@@ -56,6 +56,8 @@ header.struct > .title-line > nav > ul > li > a > div {
   padding: 12px;
   border-radius: 4px;
   transition: all 0.18s ease;
+  margin-top: 12px;
+  transform:scaleY(0);
 }
 
 header.struct > .title-line > nav > ul > li > a > div input {
@@ -77,6 +79,7 @@ header.struct > .title-line > nav > ul > li > a:focus > div,
 header.struct > .title-line > nav > ul > li > a:hover > div
 {
   opacity: 1.0;
+  transform:scaleY(1.0);
 }
 
 header.struct > nav {
