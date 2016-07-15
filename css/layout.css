@@ -63,6 +63,7 @@ header.struct > .title-line > nav > ul > li > a > div {
   border-radius: 4px;
   transition: all 0.18s ease;
   margin-top: 12px;
+  transform-origin: top;
   transform:scaleY(0);
 }
 
@@ -73,6 +74,7 @@ header.struct > .title-line > nav > ul > li > a > div:hover
   transform:scaleY(1.0);
 }
 
+a.inline-login > div input,
 header.struct > .title-line > nav > ul > li > a > div input {
   border: 0;
   margin: 12px 4px;
@@ -82,6 +84,7 @@ header.struct > .title-line > nav > ul > li > a > div input {
   border-radius: 2px;
 }
 
+a.inline-login > div input[type="submit"],
 header.struct > .title-line > nav > ul > li > a > div input[type="submit"] {
   background-color: #2980B9;
   margin-top: 12px;
@@ -243,6 +246,27 @@ main.struct > div {
 
   header.struct > .title-line > nav {
     display: none;
+  }
+
+  a.inline-login > div {
+    opacity: 0;
+    position: absolute;
+    background-color: #2C3E50;
+    color: #ECF0F1;
+    padding: 12px;
+    border-radius: 4px;
+    transition: all 0.18s ease;
+    margin-top: -78px;
+    margin-left: 32px;
+    transform-origin: left;
+    transform:scaleX(0);
+  }
+
+  a.inline-login:focus > div,
+  a.inline-login > div:hover
+  {
+    opacity: 1.0;
+    transform:scaleX(1.0);
   }
 
 }
