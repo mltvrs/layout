@@ -49,7 +49,11 @@ header.struct > .title-line > nav > ul > li {
 }
 
 
-/* MUST BE INTEGRATED USING JAVASCRIPT */
+
+header.struct > .title-line > nav > ul > li > a { color: white; }
+header.struct > .title-line > nav > ul > li > a:hover { color: white; }
+header.struct > .title-line > nav > ul > li > a:focus { color: white; }
+
 header.struct > .title-line > nav > ul > li > a > div {
   opacity: 0;
   position: absolute;
@@ -62,7 +66,6 @@ header.struct > .title-line > nav > ul > li > a > div {
   transform:scaleY(0);
 }
 
-/* MUST BE INTEGRATED USING JAVASCRIPT */
 header.struct > .title-line > nav > ul > li > a:focus > div,
 header.struct > .title-line > nav > ul > li > a > div:hover
 {
