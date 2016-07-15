@@ -48,6 +48,36 @@ header.struct > .title-line > nav > ul > li {
   margin: 8px;
 }
 
+header.struct > .title-line > nav > ul > li > a > div {
+  opacity: 0;
+  position: absolute;
+  background-color: #2C3E50;
+  color: #ECF0F1;
+  padding: 12px;
+  border-radius: 4px;
+  transition: all 0.18s ease;
+}
+
+header.struct > .title-line > nav > ul > li > a > div input {
+  border: 0;
+  margin: 12px 4px;
+  padding: 4px;
+  color: #216694;
+  display: block;
+  border-radius: 2px;
+}
+
+header.struct > .title-line > nav > ul > li > a > div input[type="submit"] {
+  background-color: #2980B9;
+  margin-top: 12px;
+  color: #ECF0F1;
+}
+
+header.struct > .title-line > nav > ul > li > a:focus > div,
+header.struct > .title-line > nav > ul > li > a:hover > div
+{
+  opacity: 1.0;
+}
 
 header.struct > nav {
   font-weight: 300;
