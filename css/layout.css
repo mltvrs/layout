@@ -1,13 +1,5 @@
 body { font-family: 'Lato', sans-serif; }
 
-.refutable {
-  display: none;
-}
-
-.refutable * {
-  display: none;
-}
-
 .struct-layout {
   display: flex;
   min-height: 100vh;
@@ -53,14 +45,9 @@ header.struct > .title-line > nav > ul {
 
 header.struct > .title-line > nav > ul > li {
   display: inline;
-  margin: 4px;
+  margin: 8px;
 }
 
-header.struct > .title-line > nav > ul > li > a {
-  background-color: red;
-  padding: 8px;
-  text-decoration: none;
-}
 
 header.struct > nav {
   font-weight: 300;
@@ -149,6 +136,44 @@ main.struct > div {
   margin: auto;
   width: 100%;
   padding: 32px 24px;
+}
+
+.refutable {
+  display: none;
+}
+
+.refutable * {
+  display: none;
+}
+
+.btn {
+  background-color: #c0c0c0;
+  color: #333333;
+  border-radius: 2px;
+  padding: 4px 16px;
+  text-decoration: none;
+  transition: all 0.18s ease;
+}
+
+.standard {
+  text-decoration: none;
+  transition: all 0.18s ease;
+  color: #ECF0F1;
+}
+
+.standard:hover {
+  color: #FFFFFF;
+}
+
+
+.confirmation {
+  background-color: #A7C520;
+  color: #F5F6D4;
+}
+
+.confirmation:hover {
+  background-color: #BADB12;
+  color: #FFFFFF;
 }
 
 
