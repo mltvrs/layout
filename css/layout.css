@@ -1,5 +1,13 @@
 body { font-family: 'Lato', sans-serif; }
 
+.refutable {
+  display: none;
+}
+
+.refutable * {
+  display: none;
+}
+
 .struct-layout {
   display: flex;
   min-height: 100vh;
@@ -18,7 +26,10 @@ header.struct {
 
 header.struct > .title-line {
   background-color: #2980B9;
+  width: 100%;
   padding: 12px;
+  display: flex;
+  justify-content: space-between;
 }
 
 header.struct > .title-line > h1 {
@@ -29,6 +40,26 @@ header.struct > .title-line > h1 {
 
 header.struct > .title-line > h1::first-letter {
   font-style: italic;
+}
+
+header.struct > .title-line > nav {
+  display: flex;
+}
+
+header.struct > .title-line > nav > ul {
+  padding: 0;
+  margin: auto;
+}
+
+header.struct > .title-line > nav > ul > li {
+  display: inline;
+  margin: 4px;
+}
+
+header.struct > .title-line > nav > ul > li > a {
+  background-color: red;
+  padding: 8px;
+  text-decoration: none;
 }
 
 header.struct > nav {
@@ -123,6 +154,14 @@ main.struct > div {
 
 @media screen and (max-width: 600px) {
 
+  .refutable {
+    display: initial;
+  }
+
+  .refutable * {
+    display: initial;
+  }
+
   footer.struct > div {
     display: block;
   }
@@ -136,6 +175,10 @@ main.struct > div {
 
   header.struct > nav > ul > li {
     display: block;
+  }
+
+  header.struct > .title-line > nav {
+    display: none;
   }
 
 }
