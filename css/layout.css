@@ -48,6 +48,8 @@ header.struct > .title-line > nav > ul > li {
   margin: 8px;
 }
 
+
+/* MUST BE INTEGRATED USING JAVASCRIPT */
 header.struct > .title-line > nav > ul > li > a > div {
   opacity: 0;
   position: absolute;
@@ -58,6 +60,14 @@ header.struct > .title-line > nav > ul > li > a > div {
   transition: all 0.18s ease;
   margin-top: 12px;
   transform:scaleY(0);
+}
+
+/* MUST BE INTEGRATED USING JAVASCRIPT */
+header.struct > .title-line > nav > ul > li > a:focus > div,
+header.struct > .title-line > nav > ul > li > a > div:hover
+{
+  opacity: 1.0;
+  transform:scaleY(1.0);
 }
 
 header.struct > .title-line > nav > ul > li > a > div input {
@@ -73,13 +83,6 @@ header.struct > .title-line > nav > ul > li > a > div input[type="submit"] {
   background-color: #2980B9;
   margin-top: 12px;
   color: #ECF0F1;
-}
-
-header.struct > .title-line > nav > ul > li > a:focus > div,
-header.struct > .title-line > nav > ul > li > a:hover > div
-{
-  opacity: 1.0;
-  transform:scaleY(1.0);
 }
 
 header.struct > nav {
