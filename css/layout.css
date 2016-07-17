@@ -252,11 +252,11 @@ main.struct > div {
 }
 
 .spotlight > div > article > h3 {
-  margin: 0px 8px;
+  margin: 0;
 }
 
 .spotlight > div > article > p {
-  font-family: 'Merriweather', serif;
+  /*font-family: 'Merriweather', serif;*/
   text-align: justify;
 }
 
