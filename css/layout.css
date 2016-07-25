@@ -178,6 +178,21 @@ main.struct > div {
   margin: auto;
   width: 100%;
   padding: 32px 24px;
+  display: flex;
+}
+
+main.struct > div > div {
+  padding: 12px;
+}
+
+main.struct > div > .left {
+  background-color: red;
+  flex: 4;
+}
+
+main.struct > div > .right {
+  background-color: yellow;
+  flex: 2;
 }
 
 .refutable {
@@ -218,56 +233,6 @@ main.struct > div {
   color: #FFFFFF;
 }
 
-.spotlight > h2 {
-  margin: 0;
-  color: #216694;
-}
-
-.spotlight > h2 > i {
-  color: #FFB03B;
-}
-
-.spotlight > div {
-  margin-top: 22px;
-  display: flex;
-}
-
-.spotlight > div > div {
-  padding: 0px 24px;
-  text-align: center;
-}
-
-.spotlight > div > div > img {
-  border-radius: 50%;
-  margin: 12px 0px;
-}
-
-
-.spotlight > div > article {
-  padding: 10px 12px;
-  /*background-color: #E7F5FF;*/
-  border-radius: 4px;
-  color: #375D81;
-  margin: auto;
-}
-
-.spotlight > div > article > h3 {
-  margin: 0;
-}
-
-.spotlight > div > article > p {
-  /*font-family: 'Merriweather', serif;*/
-  text-align: justify;
-}
-
-.spotlight > div > article > div {
-  margin: 16px 0;
-  padding: 8px;
-  background-color: #FFF;
-  width: auto;
-  display: inline-block;
-  border-radius: 4px;
-}
 
 @media screen and (max-width: 600px) {
 
@@ -319,16 +284,13 @@ main.struct > div {
     transform:scaleX(1.0);
   }
 
-  .spotlight > div {
-    display: block;
+  main.struct > div {
+    flex-direction: column;
   }
-
-  .spotlight > div > div {
-    margin: 32px;
+  main.struct > div > div {
+    flex: 1;
+    width: 100%;
   }
-
-  .spotlight > div > div > img {
-    width: 95px;
-  }
-
+  main.struct > div > .left {
+    order: 1;
 }
