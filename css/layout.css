@@ -185,13 +185,15 @@ main.struct > div > div {
   padding: 12px;
 }
 
+main.struct > div > div > h2 {
+  color: #216694;
+}
+
 main.struct > div > .left {
-  background-color: red;
   flex: 4;
 }
 
 main.struct > div > .right {
-  background-color: yellow;
   flex: 2;
 }
 
@@ -291,6 +293,9 @@ main.struct > div > .right {
     flex: 1;
     width: 100%;
   }
+
+
+
   main.struct > div > .left {
     order: 1;
 }
